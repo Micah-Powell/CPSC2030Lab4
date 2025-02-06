@@ -9,10 +9,9 @@ def avgscore(score):
 def avgputts(putt):
     return sum(putt)/len(putt)
 
-scores = stats["score"]
-putts = []
+scores = stats["score"].tolist()
+putts = stats["putts"].tolist()
 roundsplayed = 0
 
-print (scores)
-
+print (putts)
 
