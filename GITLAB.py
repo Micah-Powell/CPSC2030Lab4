@@ -35,6 +35,8 @@ print(worst(putts))
 print(best(putts))
 
 print (f"my average score is {round(averagescore - par,2)}above par")
+print (f"my worst score to par is {worst(scores)-par} shots over par")
+print (f"my best score to par is {best(scores)-par} shots over par")
 
 plt.scatter(stats["score"], stats["putts"])
 plt.xlabel("score")
