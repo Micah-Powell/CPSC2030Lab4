@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 
 stats = pd.read_csv("Golfstats.csv")
 
@@ -30,3 +31,8 @@ print(best(scores))
 print(worst(putts))
 print(best(putts))
 
+plt.scatter(stats["score"], stats["putts"])
+plt.xlabel("score")
+plt.ylabel("putts")
+plt.title("score versus putts")
+plt.show()
