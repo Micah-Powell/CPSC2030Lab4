@@ -16,20 +16,25 @@ def worst(x):
 scores = stats["score"].tolist()
 putts = stats["putts"].tolist()
 
+
 roundsplayed = len(scores)
+
 
 par = 72
 
+
 averagescore = average(scores)
 print (averagescore)
-
 averageputts = average(putts)
 print (averageputts)
+
 
 print(worst(scores))
 print(best(scores))
 print(worst(putts))
 print(best(putts))
+
+print (f"my average score is {round(averagescore - par,2)}above par")
 
 plt.scatter(stats["score"], stats["putts"])
 plt.xlabel("score")
